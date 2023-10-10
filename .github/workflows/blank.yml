@@ -20,6 +20,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Get code
         uses: actions/checkout@v3
+
+      - name: install Dependency
+        run: npm ci
       
 
       # Runs a single command using the runners shell
